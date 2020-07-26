@@ -12626,11 +12626,1263 @@ void tampil(void)
     glVertex3f(9, 19, 65);
     glEnd();
 
+     //TEMBOK BELAKANG TRIBUN UTAMA 2
+     glBegin(GL_POLYGON);
+    glColor3ub(174, 184, 177);
+    glVertex3f(32, -10, -53);
+    glVertex3f(32, 13, -53);
+    glVertex3f(-27, 13, -53);
+    glVertex3f(-27, -10, -53);
+    glEnd();
+
+//alas Atap Tribun 2
+    glBegin(GL_POLYGON);
+    glColor3ub(174, 184, 177);
+    glVertex3f(32, 11, -53);
+    glVertex3f(32, 11, -34);
+    glVertex3f(-27, 11, -34);
+    glVertex3f(-27, 11, -53);
+    glEnd();
+
+
+//ATAP BELAKANG TRIBUN UTAMA 2
+    glBegin(GL_QUADS);
+    glColor3ub(174, 184, 177);
+    glVertex3f(32, 15, -48);
+    glVertex3f(32, 13, -53);
+    glVertex3f(-27, 13, -53);
+    glVertex3f(-27, 15, -48);
+    glEnd();
+//ATAP DEPAN TRIBUN UTAMA 2
+    glBegin(GL_QUADS);
+     glColor3ub(174, 184, 177);
+    glVertex3f(30, 11, -32);
+    glVertex3f(32, 15, -48);
+    glVertex3f(-27, 15, -48);
+    glVertex3f(-27, 11, -32);
+    glEnd();
+
+
+
+///TRIBUN BELAKANG GAWANG 1
+
+    /////////////////////////////////////////////////////////////NEW ATAP TRIBUN KIRI
+    //KIRI DEPAN
+    glBegin(GL_POLYGON);
+    glColor3ub(174, 184, 177);
+    glVertex3f(-55, -10, -32);
+    glVertex3f(-55, 11, -32);
+    glVertex3f(-55, 11, 22);
+    glVertex3f(-55, -10, 22);
+    glEnd();
+//KIRI SAMPING
+    glBegin(GL_POLYGON);
+    glColor3ub(174, 184, 177);
+    glVertex3f(-43, -10, 22);
+    glVertex3f(-43, 11, 22);
+    glVertex3f(-55, 11, 22);
+    glVertex3f(-55, -10, 22);
+    glEnd();
+     //KANAN SAMPING
+    glBegin(GL_POLYGON);
+    glColor3ub(174, 184, 177);
+    glVertex3f(-43, -10, -32);
+    glVertex3f(-43, 11, -32);
+    glVertex3f(-55, 11, -32);
+    glVertex3f(-55, -10, -32);
+    glEnd();
+//ATAP SEGITIGA
+    glBegin(GL_TRIANGLES);
+    glColor3ub(174, 184, 177);
+    glVertex3f(-27, 11, -32);
+    glVertex3f(-55, 11, -32);
+    glVertex3f(-41.7, 15, -32);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3ub(174, 184, 177);
+    glVertex3f(-27, 11, 22);
+    glVertex3f(-55, 11, 22);
+    glVertex3f(-41.7, 15, 22);
+    glEnd();
+
+    //ATAP PERSEGI
+    glBegin(GL_POLYGON);
+    glColor3ub(174, 184, 177);
+    glVertex3f(-27, 11, 22);
+    glVertex3f(-27, 11, -32);
+    glVertex3f(-41.7, 15, -32);
+    glVertex3f(-41.7, 15, 22);
+    glEnd();
+
+     //ATAP PERSEGI
+    glBegin(GL_POLYGON);
+    glColor3ub(174, 184, 177);
+    glVertex3f(-41.7, 15, -32);
+    glVertex3f(-55, 11, -32);
+    glVertex3f(-55, 11, 22);
+    glVertex3f(-41.7, 15, 22);
+    glEnd();
+
+
+
+      //KANAN TRIBUN BANGUNAN KOTAK
+    glBegin(GL_POLYGON);
+    glColor3ub(0.0, 255, 0.0);
+    glVertex3f(52, -10, -32);
+    glVertex3f(52, 11.5, -32);
+    glVertex3f(52, 11.5, 22);
+    glVertex3f(52, -10, 22);
+    glEnd();
+
+    //KANAN TRIBUN BANGUNAN DEPAN
+    glBegin(GL_POLYGON);
+    glColor3ub(0.0, 255, 255);
+    glVertex3f(60, -9.9, -32);
+    glVertex3f(60, 11.5, -32);
+    glVertex3f(60, 11.5, 22);
+    glVertex3f(60, -9.9, 22);
+    glEnd();
+
+    // //KANAN TRIBUN BANGUNAN BAWAH
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 0);
+    glVertex3f(52, -9.9, -32);
+    glVertex3f(60, -9.9, -32);
+    glVertex3f(60, -9.9, 22);
+    glVertex3f(52, -9.9, 22);
+    glEnd();
+    // //KANAN TRIBUN BANGUNAN KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 0);
+    glVertex3f(52, -9.9, -32);
+    glVertex3f(60, -9.9, -32);
+    glVertex3f(60, 12, -32);
+    glVertex3f(52, 12, -32);
+    glEnd();
+
+     //KANAN TRIBUN BANGUNAN ATAS
+    glBegin(GL_POLYGON);
+    glColor3ub(174, 184, 177);
+    glVertex3f(32, 11.5, -32);
+    glVertex3f(60, 11.5, -32);
+    glVertex3f(60, 11.5, 22);
+    glVertex3f(32, 11.5, 22);
+    glEnd();
+
+     // //KANAN TRIBUN BANGUNAN KIRI
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 0);
+    glVertex3f(52, -9.9, 22);
+    glVertex3f(60, -9.9, 22);
+    glVertex3f(60, 12, 22);
+    glVertex3f(52, 12, 22);
+    glEnd();
+
+ // SPONSOR DEPAN Kiri TRIBUN BANGUNAN ATAS
+    glBegin(GL_POLYGON);
+    glColor3ub(17, 75, 184);
+    glVertex3f(-27, 11, -32);
+    glVertex3f(-27, 16, -32);
+    glVertex3f(-27, 16, 22);
+    glVertex3f(-27, 11, 22);
+    glEnd();
+
+     // SPONSOR belakang Kiri TRIBUN BANGUNAN ATAS
+    glBegin(GL_POLYGON);
+    glColor3ub(17, 75, 184);
+    glVertex3f(-26, 11, -32);
+    glVertex3f(-26, 16, -32);
+    glVertex3f(-26, 16, 22);
+    glVertex3f(-26, 11, 22);
+    glEnd();
+
+     // SPONSOR BAWAH Kiri TRIBUN BANGUNAN ATAS
+    glBegin(GL_POLYGON);
+    glColor3ub(17, 75, 184);
+    glVertex3f(-27, 11, -32);
+    glVertex3f(-26, 11, -32);
+    glVertex3f(-26, 11, 22);
+    glVertex3f(-27, 11, 22);
+    glEnd();
+
+      // SPONSOR ATAS Kiri TRIBUN BANGUNAN ATAS
+    glBegin(GL_POLYGON);
+    glColor3ub(17, 75, 184);
+    glVertex3f(-27, 16, -32);
+    glVertex3f(-26, 16, -32);
+    glVertex3f(-26, 16, 22);
+    glVertex3f(-27, 16, 22);
+    glEnd();
+
+ // SPONSOR SAMPING 1 KANAN TRIBUN BANGUNAN ATAS
+    glBegin(GL_POLYGON);
+    glColor3ub(17, 75, 184);
+    glVertex3f(-26, 11.5, 22);
+    glVertex3f(-26, 16, 22);
+    glVertex3f(-27, 16, 22);
+    glVertex3f(-27, 11.5, 22);
+    glEnd();
+ // SPONSOR SAMPING 2 KANAN TRIBUN BANGUNAN ATAS
+    glBegin(GL_POLYGON);
+    glColor3ub(17, 75, 184);
+    glVertex3f(-26, 11.5, -32);
+    glVertex3f(-26, 16, -32);
+    glVertex3f(-27, 16, -32);
+    glVertex3f(-27, 11.5, -32);
+    glEnd();
+
+    ////////////////////////////////////////////////////////////STOP
+
+
+    // //KANAN TRIBUN BANGUNAN BAWAH
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 0);
+    glVertex3f(52, -9.9, -32);
+    glVertex3f(60, -9.9, -32);
+    glVertex3f(60, -9.9, 22);
+    glVertex3f(52, -9.9, 22);
+    glEnd();
+    // //KANAN TRIBUN BANGUNAN KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 0);
+    glVertex3f(52, -9.9, -32);
+    glVertex3f(60, -9.9, -32);
+    glVertex3f(60, 12, -32);
+    glVertex3f(52, 12, -32);
+    glEnd();
+
+     // //KANAN TRIBUN BANGUNAN KIRI
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 0);
+    glVertex3f(52, -9.9, 22);
+    glVertex3f(60, -9.9, 22);
+    glVertex3f(60, 12, 22);
+    glVertex3f(52, 12, 22);
+    glEnd();
 
 
 
 
 
+
+//LOBBY
+//loby
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-12, -10, -70);
+    glVertex3f(-12, 2, -70);
+    glVertex3f(15, 2, -70);
+    glVertex3f(15, -10, -70);
+    glEnd();
+
+      //loby
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-12, -10, -53);
+    glVertex3f(-12, 2, -53);
+    glVertex3f(15, 2, -53);
+    glVertex3f(15, -10, -53);
+    glEnd();
+
+      //loby
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-12, 2, -53);
+    glVertex3f(-12, 2, -70);
+    glVertex3f(15, 2, -70);
+    glVertex3f(15, 2, -53);
+    glEnd();
+
+     //loby
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-12, 3, -53);
+    glVertex3f(-12, 3, -69);
+    glVertex3f(15, 3, -69);
+    glVertex3f(15, 3, -53);
+    glEnd();
+
+    //loby
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-12, -10, -53);
+    glVertex3f(-12, -10, -70);
+    glVertex3f(15, -10, -70);
+    glVertex3f(15, -10, -53);
+    glEnd();
+      //loby
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(15, -10, -53);
+    glVertex3f(15, 2, -53);
+    glVertex3f(15, 2, -70);
+    glVertex3f(15, -10, -70);
+    glEnd();
+
+    //loby
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-12, -10, -53);
+    glVertex3f(-12, 2, -53);
+    glVertex3f(-12, 2, -70);
+    glVertex3f(-12, -10, -70);
+    glEnd();
+
+     //loby
+    glBegin(GL_QUADS);
+    glColor3ub(255, 0, 0);
+    glVertex3f(-14, 1, -71);
+    glVertex3f(-12, 3, -69);
+    glVertex3f(15, 3, -69);
+    glVertex3f(17, 1, -71);
+    glEnd();
+
+     //loby
+    glBegin(GL_QUADS);
+    glColor3ub(255, 0, 0);
+    glVertex3f(-14, 1, -71);
+    glVertex3f(-12, 3, -69);
+    glVertex3f(-12, 3, -53);
+    glVertex3f(-14, 1, -53);
+    glEnd();
+
+     //loby
+    glBegin(GL_QUADS);
+    glColor3ub(255, 0, 0);
+    glVertex3f(17, 1, -71);
+    glVertex3f(15, 3, -69);
+    glVertex3f(15, 3, -53);
+    glVertex3f(17, 1, -53);
+    glEnd();
+
+
+
+
+
+
+    /////////////////////////////////////////////////SPONSOR TRIBUN UTAMA 2
+     //sponsor tribun2
+    //atap sponsor depan
+    glBegin(GL_QUADS);
+    glColor3ub(0, 0, 255);
+    glVertex3f(29, 11, -32);
+    glVertex3f(-27, 11, -32);
+    glVertex3f(-27, 13, -32);
+    glVertex3f(29, 13, -32);
+    glEnd();
+//atap sponsor belakang
+    glBegin(GL_QUADS);
+    glColor3ub(0, 0, 255);
+    glVertex3f(29, 11, -32.5);
+    glVertex3f(-27, 11, -32.5);
+    glVertex3f(-27, 13, -32.5);
+    glVertex3f(29, 13, -32.5);
+    glEnd();
+
+//atap sponsor atas
+    glBegin(GL_QUADS);
+    glColor3ub(0, 0, 255);
+    glVertex3f(29, 13, -32.5);
+    glVertex3f(-27, 13, -32.5);
+    glVertex3f(-27, 13, -32);
+    glVertex3f(29, 13, -32);
+    glEnd();
+
+    //atap sponsor kiri
+    glBegin(GL_QUADS);
+    glColor3ub(0, 0, 255);
+    glVertex3f(-27, 11, -32.5);
+    glVertex3f(-27, 11, -32);
+    glVertex3f(-27, 13, -32);
+    glVertex3f(-27, 13, -32.5);
+    glEnd();
+
+        //atap sponsor kanan
+    glBegin(GL_QUADS);
+    glColor3ub(0, 0, 255);
+    glVertex3f(29, 11, -32);
+    glVertex3f(29, 11, -32.5);
+    glVertex3f(29, 13, -32.5);
+    glVertex3f(29, 13, -32);
+    glEnd();
+
+       //LOBBY DEPAN
+    glBegin(GL_POLYGON);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-7, 0, 55);
+    glVertex3f(-7, 0, 77);
+    glVertex3f(-5, 0, 80);
+    glVertex3f(9, 0, 80);
+    glVertex3f(11, 0, 77);
+    glVertex3f(11, 0, 55);
+    glEnd();
+//ALAS LOBBY
+    glBegin(GL_POLYGON);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-7, -7, 55);
+    glVertex3f(-7, -7, 77);
+    glVertex3f(-5, -7, 80);
+    glVertex3f(9, -7, 80);
+    glVertex3f(11, -7, 77);
+    glVertex3f(11, -7, 55);
+    glEnd();
+
+//TEMBOK KIRI LOBY TENGAH 1.1
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-7, 0, 55);
+    glVertex3f(-7, 0, 77);
+    glVertex3f(-7, -7, 77);
+    glVertex3f(-7, -7, 55);
+    glEnd();
+
+        glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-7.5, 0, 55);
+    glVertex3f(-7.5, 0, 77);
+    glVertex3f(-7.5, -7, 77);
+    glVertex3f(-7.5, -7, 55);
+    glEnd();
+            glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-7, 0, 55);
+    glVertex3f(-7.5, 0, 55);
+    glVertex3f(-7.5, 0, 77);
+    glVertex3f(-7, 0, 77);
+    glEnd();
+
+
+//TEMBOK KIRI LOBY TENGAH 1.2
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-7, -7, 77);
+    glVertex3f(-7, 0, 77);
+    glVertex3f(-5, 0, 80);
+    glVertex3f(-5, -7, 80);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-7.5, -7, 77);
+    glVertex3f(-7.5, 0, 77);
+    glVertex3f(-5, 0, 80.5);
+    glVertex3f(-5, -7, 80.5);
+    glEnd();
+
+        glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-7.5, 0, 77);
+    glVertex3f(-7, 0, 77);
+    glVertex3f(-5, 0, 80);
+    glVertex3f(-5, 0, 80.5);
+    glEnd();
+
+    //KAKI KIRI 1
+            glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-4, -10, 79);
+    glVertex3f(-2, -10, 79);
+    glVertex3f(-2, -5, 79);
+    glVertex3f(-4, -5, 79);
+    glEnd();
+
+                glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-4, -10, 78);
+    glVertex3f(-2, -10, 78);
+    glVertex3f(-2, -5, 78);
+    glVertex3f(-4, -5, 78);
+    glEnd();
+
+                    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-4, -10, 78);
+    glVertex3f(-4, -10, 79);
+    glVertex3f(-4, -5, 79);
+    glVertex3f(-4, -5, 78);
+    glEnd();
+
+                        glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-2, -10, 79);
+    glVertex3f(-2, -10, 78);
+    glVertex3f(-2, -5, 78);
+    glVertex3f(-2, -5, 79);
+    glEnd();
+
+                 //KAKI KIRI 2
+             glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-4, -10, 71);
+    glVertex3f(-2, -10, 71);
+    glVertex3f(-2, -5, 71);
+    glVertex3f(-4, -5, 71);
+    glEnd();
+
+                glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-4, -10, 70);
+    glVertex3f(-2, -10, 70);
+    glVertex3f(-2, -5, 70);
+    glVertex3f(-4, -5, 70);
+    glEnd();
+
+                    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-4, -10, 70);
+    glVertex3f(-4, -10, 71);
+    glVertex3f(-4, -5, 71);
+    glVertex3f(-4, -5, 70);
+    glEnd();
+
+                        glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-2, -10, 70);
+    glVertex3f(-2, -10, 71);
+    glVertex3f(-2, -5, 71);
+    glVertex3f(-2, -5, 70);
+    glEnd();
+
+
+
+
+//TEMBOK TENGAH LOBY TENGAH 1
+    glBegin(GL_QUADS);
+   glColor3ub(32, 227, 194);
+    glVertex3f(-5, 0, 80);
+    glVertex3f(9, 0, 80);
+    glVertex3f(9, -7, 80);
+    glVertex3f(-5, -7, 80);
+    glEnd();
+
+        glBegin(GL_QUADS);
+   glColor3ub(32, 227, 194);
+    glVertex3f(-5, 0, 80.5);
+    glVertex3f(9, 0, 80.5);
+    glVertex3f(9, -7, 80.5);
+    glVertex3f(-5, -7, 80.5);
+    glEnd();
+
+            glBegin(GL_QUADS);
+   glColor3ub(12, 145, 123);
+    glVertex3f(-5, 0, 80);
+    glVertex3f(9, 0, 80);
+    glVertex3f(9, 0, 80.5);
+    glVertex3f(-5, 0, 80.5);
+    glEnd();
+
+//TEMBOK KANAN LOBY TENGAH 1.1
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(11, 0, 55);
+    glVertex3f(11, 0, 77);
+    glVertex3f(11, -7, 77);
+    glVertex3f(11, -7, 55);
+    glEnd();
+
+        glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(11.5, 0, 55);
+    glVertex3f(11.5, 0, 77);
+    glVertex3f(11.5, -7, 77);
+    glVertex3f(11.5, -7, 55);
+    glEnd();
+
+   glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(11, 0, 55);
+    glVertex3f(11.5, 0, 55);
+    glVertex3f(11.5, 0, 77);
+    glVertex3f(11, 0, 77);
+    glEnd();
+
+//TEMBOK KANAN LOBY TENGAH 1.2
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(11, -7, 77);
+    glVertex3f(11, 0, 77);
+    glVertex3f(9, 0, 80);
+    glVertex3f(9, -7, 80);
+    glEnd();
+
+   glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(11.5, -7, 77);
+    glVertex3f(11.5, 0, 77);
+    glVertex3f(9, 0, 80.5);
+    glVertex3f(9, -7, 80.5);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(11, 0, 77);
+    glVertex3f(11.5, 0, 77);
+    glVertex3f(9, 0, 80.5);
+    glVertex3f(9, 0, 80);
+    glEnd();
+
+    //KAKI KIRI 1
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(8, -10, 79);
+    glVertex3f(6, -10, 79);
+    glVertex3f(6, -5, 79);
+    glVertex3f(8, -5, 79);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(8, -10, 78);
+    glVertex3f(6, -10, 78);
+    glVertex3f(6, -5, 78);
+    glVertex3f(8, -5, 78);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(8, -10, 78);
+    glVertex3f(8, -10, 79);
+    glVertex3f(8, -5, 79);
+    glVertex3f(8, -5, 78);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(6, -10, 79);
+    glVertex3f(6, -10, 78);
+    glVertex3f(6, -5, 78);
+    glVertex3f(6, -5, 79);
+    glEnd();
+
+    //KAKI KIRI 2
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(8, -10, 71);
+    glVertex3f(6, -10, 71);
+    glVertex3f(6, -5, 71);
+    glVertex3f(8, -5, 71);
+    glEnd();
+
+     glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(8, -10, 70);
+    glVertex3f(6, -10, 70);
+    glVertex3f(6, -5, 70);
+    glVertex3f(8, -5, 70);
+    glEnd();
+
+  glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(8, -10, 70);
+    glVertex3f(8, -10, 71);
+    glVertex3f(8, -5, 71);
+    glVertex3f(8, -5, 70);
+    glEnd();
+
+     glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(6, -10, 70);
+    glVertex3f(6, -10, 71);
+    glVertex3f(6, -5, 71);
+    glVertex3f(6, -5, 70);
+    glEnd();
+
+
+   ///////////////////////////////////////////////////TULANG PENOPANG PONDASI TRIBUN SEBELAH KANAN 2
+
+     // TULANG BAWAH BANGUNAN STADION SEBELAH KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(41.5, 12, 22);
+    glVertex3f(41.5, 12, -32);
+    glVertex3f(42.5, 12, -32);
+    glVertex3f(42.5, 12, 22);
+    glEnd();
+     // TULANG ATAS BANGUNAN STADION SEBELAH KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(41.5, 18, 22);
+    glVertex3f(41.5, 18, -32);
+    glVertex3f(42.5, 18.5, -32);
+    glVertex3f(42.5, 18.5, 22);
+    glEnd();
+    // TULANG  TEGAK 1 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, 17);
+    glVertex3f(41.5, 18.5, 17);
+    glVertex3f(41.5, 12, 17);
+    glVertex3f(42.5, 12, 17);
+    glEnd();
+    // TULANG  TEGAK 2 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, 8);
+    glVertex3f(41.5, 18.5, 8);
+    glVertex3f(41.5, 12, 8);
+    glVertex3f(42.5, 12, 8);
+    glEnd();
+    // TULANG  TEGAK 3 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -1);
+    glVertex3f(41.5, 18.5, -1);
+    glVertex3f(41.5, 12, -1);
+    glVertex3f(42.5, 12, -1);
+    glEnd();
+    // TULANG  TEGAK 4 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -10);
+    glVertex3f(41.5, 18.5, -10);
+    glVertex3f(41.5, 12, -10);
+    glVertex3f(42.5, 12, -10);
+    glEnd();
+     // TULANG  TEGAK 5 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -19);
+    glVertex3f(41.5, 18.5, -19);
+    glVertex3f(41.5, 12, -19);
+    glVertex3f(42.5, 12, -19);
+    glEnd();
+    // TULANG  TEGAK 6 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -28);
+    glVertex3f(41.5, 18.5, -28);
+    glVertex3f(41.5, 12, -28);
+    glVertex3f(42.5, 12, -28);
+    glEnd();
+
+
+
+    ////////////////////////////////////////////////////
+    // TULANG  SIKU 1 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, 21);
+    glVertex3f(41.5, 18.5, 21);
+    glVertex3f(41.5, 12, 17);
+    glVertex3f(42.5, 12, 17);
+    glEnd();
+    // TULANG  SIKU 2 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, 13);
+    glVertex3f(41.5, 18.5, 13);
+    glVertex3f(41.5, 12, 17);
+    glVertex3f(42.5, 12, 17);
+    glEnd();
+    // TULANG  SIKU 3 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, 12);
+    glVertex3f(41.5, 18.5, 12);
+    glVertex3f(41.5, 12, 8);
+    glVertex3f(42.5, 12, 8);
+    glEnd();
+    // TULANG  SIKU 4 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, 4);
+    glVertex3f(41.5, 18.5, 4);
+    glVertex3f(41.5, 12, 8);
+    glVertex3f(42.5, 12, 8);
+    glEnd();
+     // TULANG  SIKU 5 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, 3);
+    glVertex3f(41.5, 18.5, 3);
+    glVertex3f(41.5, 12, -1);
+    glVertex3f(42.5, 12, -1);
+    glEnd();
+     // TULANG  SIKU 6 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -5);
+    glVertex3f(41.5, 18.5, -5);
+    glVertex3f(41.5, 12, -1);
+    glVertex3f(42.5, 12, -1);
+    glEnd();
+    // TULANG  SIKU 7 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -6);
+    glVertex3f(41.5, 18.5, -6);
+    glVertex3f(41.5, 12, -10);
+    glVertex3f(42.5, 12, -10);
+    glEnd();
+    // TULANG  SIKU 8 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -14);
+    glVertex3f(41.5, 18.5, -14);
+    glVertex3f(41.5, 12, -10);
+    glVertex3f(42.5, 12, -10);
+    glEnd();
+     // TULANG  SIKU 9 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -15);
+    glVertex3f(41.5, 18.5, -15);
+    glVertex3f(41.5, 12, -19);
+    glVertex3f(42.5, 12, -19);
+    glEnd();
+     // TULANG  SIKU 10 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -23);
+    glVertex3f(41.5, 18.5, -23);
+    glVertex3f(41.5, 12, -19);
+    glVertex3f(42.5, 12, -19);
+    glEnd();
+    // TULANG  SIKU 11 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -24);
+    glVertex3f(41.5, 18.5, -24);
+    glVertex3f(41.5, 12, -28);
+    glVertex3f(42.5, 12, -28);
+    glEnd();
+    // TULANG  SIKU 12 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(42.5, 18.5, -31);
+    glVertex3f(41.5, 18.5, -31);
+    glVertex3f(41.5, 12, -28);
+    glVertex3f(42.5, 12, -28);
+    glEnd();
+
+
+    ////////////////////////////////////////////////////
+    // TULANG  SIKU 1 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, 21);
+    glVertex3f(49.5, 20, 21);
+    glVertex3f(49.5, 12, 17);
+    glVertex3f(50.5, 12, 17);
+    glEnd();
+    // TULANG  SIKU 2 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, 13);
+    glVertex3f(49.5, 20, 13);
+    glVertex3f(49.5, 12, 17);
+    glVertex3f(50.5, 12, 17);
+    glEnd();
+    // TULANG  SIKU 3 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, 12);
+    glVertex3f(49.5, 20, 12);
+    glVertex3f(49.5, 12, 8);
+    glVertex3f(50.5, 12, 8);
+    glEnd();
+    // TULANG  SIKU 4 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, 4);
+    glVertex3f(49.5, 20, 4);
+    glVertex3f(49.5, 12, 8);
+    glVertex3f(50.5, 12, 8);
+    glEnd();
+     // TULANG  SIKU 5 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, 3);
+    glVertex3f(49.5, 20, 3);
+    glVertex3f(49.5, 12, -1);
+    glVertex3f(50.5, 12, -1);
+    glEnd();
+     // TULANG  SIKU 6 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, -5);
+    glVertex3f(49.5, 20, -5);
+    glVertex3f(49.5, 12, -1);
+    glVertex3f(50.5, 12, -1);
+    glEnd();
+    // TULANG  SIKU 7 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, -6);
+    glVertex3f(49.5, 20, -6);
+    glVertex3f(49.5, 12, -10);
+    glVertex3f(50.5, 12, -10);
+    glEnd();
+    // TULANG  SIKU 8 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, -14);
+    glVertex3f(49.5, 20, -14);
+    glVertex3f(49.5, 12, -10);
+    glVertex3f(50.5, 12, -10);
+    glEnd();
+     // TULANG  SIKU 9 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, -15);
+    glVertex3f(49.5, 20, -15);
+    glVertex3f(49.5, 12, -19);
+    glVertex3f(50.5, 12, -19);
+    glEnd();
+     // TULANG  SIKU 10 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, -23);
+    glVertex3f(49.5, 20, -23);
+    glVertex3f(49.5, 12, -19);
+    glVertex3f(50.5, 12, -19);
+    glEnd();
+    // TULANG  SIKU 11 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, -24);
+    glVertex3f(49.5, 20, -24);
+    glVertex3f(49.5, 12, -28);
+    glVertex3f(50.5, 12, -28);
+    glEnd();
+    // TULANG  SIKU 12 BANGUNAN STADION KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(59, 59, 61);
+    glVertex3f(50.5, 20, -31);
+    glVertex3f(49.5, 20, -31);
+    glVertex3f(49.5, 12, -28);
+    glVertex3f(50.5, 12, -28);
+    glEnd();
+
+    //TRIBUN BELAKANG GAWANG 2
+      //PINGGIR TRIBUN 4 KIRI
+    glBegin(GL_POLYGON);
+    glColor3ub(0.0, 255, 0.0);
+    glVertex3f(52, -10, 22);
+    glVertex3f(52, 11, 22);
+    glVertex3f(50, 11, 22);
+    glVertex3f(42, 3, 22);
+    glVertex3f(40, 3, 22);
+    glVertex3f(32, -5, 22);
+    glVertex3f(32, -10, 22);
+    glEnd();
+
+     //PINGGIR TRIBUN 4 KANAN
+    glBegin(GL_POLYGON);
+    glColor3ub(0.0, 255, 0.0);
+    glVertex3f(52, -10, -32);
+    glVertex3f(52, 11, -32);
+    glVertex3f(50, 11, -32);
+    glVertex3f(42, 3, -32);
+    glVertex3f(40, 3, -32);
+    glVertex3f(32, -5, -32);
+    glVertex3f(32, -10, -32);
+    glEnd();
+
+       //PINGGIR TRIBUN 1 KANANNNNNNNNNNNNNNNNNNNN
+    glBegin(GL_POLYGON);
+    glColor3ub(0.0, 255, 0.0);
+    glVertex3f(32, -10, 40);
+    glVertex3f(32, 11, 40);
+    glVertex3f(32, 3, 32);
+    glVertex3f(32, 3, 30);
+    glVertex3f(32, -5, 22);
+    glVertex3f(32, -10, 22);
+    glEnd();
+
+     //PINGGIR TRIBUN 1 KIRI
+    glBegin(GL_POLYGON);
+    glColor3ub(0.0, 255, 0.0);
+    glVertex3f(-27, -10, 40);
+    glVertex3f(-27, 11, 40);
+    glVertex3f(-27, 3, 32);
+    glVertex3f(-27, 3, 30);
+    glVertex3f(-27, -5, 22);
+    glVertex3f(-27, -10, 22);
+    glEnd();
+
+
+    //LOBY KIRI
+//samping loby kiri
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-14.5, 0, 55);
+    glVertex3f(-14.5, 15, 55);
+    glVertex3f(-14.5, 15, 62);
+    glVertex3f(-14.5, 0, 62);
+    glEnd();
+
+        glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-15, 0, 55);
+    glVertex3f(-15, 15, 55);
+    glVertex3f(-15, 15, 62.5);
+    glVertex3f(-15, 0, 62.5);
+    glEnd();
+
+            glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-15, 15, 55);
+    glVertex3f(-14.5, 15, 55);
+    glVertex3f(-14.5, 15, 62);
+    glVertex3f(-15, 15, 62);
+    glEnd();
+//depan loby kiri
+        glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-14.5, 0, 62);
+    glVertex3f(-7.5, 0, 62);
+    glVertex3f(-7.5, 15, 62);
+    glVertex3f(-14.5, 15, 62);
+    glEnd();
+
+            glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(-15, 0, 62.5);
+    glVertex3f(-7.5, 0, 62.5);
+    glVertex3f(-7.5, 15, 62.5);
+    glVertex3f(-15, 15, 62.5);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3ub(12, 145, 123);
+    glVertex3f(-15, 15, 62);
+    glVertex3f(-7.5, 15, 62);
+    glVertex3f(-7.5, 15, 62.5);
+    glVertex3f(-15, 15, 62.5);
+    glEnd();
+
+//alas loby kiri
+        glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-14.5, 0, 55);
+    glVertex3f(-7.5, 0, 55);
+    glVertex3f(-7.5, 0, 62);
+    glVertex3f(-14.5, 0, 62);
+    glEnd();
+
+    //atap loby kiri
+        glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-14.5, 14, 55);
+    glVertex3f(-7.5, 14, 55);
+    glVertex3f(-7.5, 14, 62);
+    glVertex3f(-14.5, 14, 62);
+    glEnd();
+
+    //LOBY KANAN
+//samping loby kanan
+    glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(18.5, 0, 55);
+    glVertex3f(18.5, 15, 55);
+    glVertex3f(18.5, 15, 62);
+    glVertex3f(18.5, 0, 62);
+    glEnd();
+
+        glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(19, 0, 55);
+    glVertex3f(19, 15, 55);
+    glVertex3f(19, 15, 62.5);
+    glVertex3f(19, 0, 62.5);
+    glEnd();
+
+            glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(19, 15, 55);
+    glVertex3f(18.5, 15, 55);
+    glVertex3f(18.5, 15, 62);
+    glVertex3f(19, 15, 62);
+    glEnd();
+//depan loby kanan
+        glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(18.5, 0, 62);
+    glVertex3f(11.5, 0, 62);
+    glVertex3f(11.5, 15, 62);
+    glVertex3f(18.5, 15, 62);
+    glEnd();
+
+            glBegin(GL_QUADS);
+    glColor3ub(32, 227, 194);
+    glVertex3f(19, 0, 62.5);
+    glVertex3f(11.5, 0, 62.5);
+    glVertex3f(11.5, 15, 62.5);
+    glVertex3f(19, 15, 62.5);
+    glEnd();
+
+    glBegin(GL_QUADS);
+        glColor3ub(12, 145, 123);
+    glVertex3f(19, 15, 62);
+    glVertex3f(11.5, 15, 62);
+    glVertex3f(11.5, 15, 62.5);
+    glVertex3f(19, 15, 62.5);
+    glEnd();
+
+//alas loby kiri
+        glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(18.5, 0, 55);
+    glVertex3f(11.5, 0, 55);
+    glVertex3f(11.5, 0, 62);
+    glVertex3f(18.5, 0, 62);
+    glEnd();
+
+    //atap loby kiri
+        glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(18.5, 14, 55);
+    glVertex3f(11.5, 14, 55);
+    glVertex3f(11.5, 14, 62);
+    glVertex3f(18.5, 14, 62);
+    glEnd();
+
+
+
+    ///////////////////////////////////////////////////////NEW LOBBY TRIBUN UTAMA
+    //KIRI
+
+ //KAKI KIRI 1
+   glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-14, -10, 61);
+    glVertex3f(-12, -10, 61);
+    glVertex3f(-12, 0, 61);
+    glVertex3f(-14, 0, 61);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-14, -10, 60);
+    glVertex3f(-12, -10, 60);
+    glVertex3f(-12, 0, 60);
+    glVertex3f(-14, 0, 60);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-14, -10, 60);
+    glVertex3f(-14, -10, 61);
+    glVertex3f(-14, 0, 61);
+    glVertex3f(-14, 0, 60);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-12, -10, 61);
+    glVertex3f(-12, -10, 60);
+    glVertex3f(-12, 0, 60);
+    glVertex3f(-12, 0, 61);
+    glEnd();
+
+     //KAKI KIRI 2
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-14, -10, 57);
+    glVertex3f(-12, -10, 57);
+    glVertex3f(-12, 0, 57);
+    glVertex3f(-14, 0, 57);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-14, -10, 56);
+    glVertex3f(-12, -10, 56);
+    glVertex3f(-12, 0, 56);
+    glVertex3f(-14, 0, 56);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-14, -10, 56);
+    glVertex3f(-14, -10, 57);
+    glVertex3f(-14, 0, 57);
+    glVertex3f(-14, 0, 56);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(-12, -10, 57);
+    glVertex3f(-12, -10, 56);
+    glVertex3f(-12, 0, 56);
+    glVertex3f(-12, 0, 57);
+    glEnd();
+
+
+
+//KANAN
+
+
+  //KAKI KIRI 1
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(18, -10, 61);
+    glVertex3f(16, -10, 61);
+    glVertex3f(16, 0, 61);
+    glVertex3f(18, 0, 61);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(18, -10, 60);
+    glVertex3f(16, -10, 60);
+    glVertex3f(16, 0, 60);
+    glVertex3f(18, 0, 60);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(18, -10, 60);
+    glVertex3f(18, -10, 61);
+    glVertex3f(18, 0, 61);
+    glVertex3f(18, 0, 60);
+    glEnd();
+
+     glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(16, -10, 61);
+    glVertex3f(16, -10, 60);
+    glVertex3f(16, 0, 60);
+    glVertex3f(16, 0, 61);
+    glEnd();
+
+
+
+
+ //KAKI KIRI 2
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(18, -10, 57);
+    glVertex3f(16, -10, 57);
+    glVertex3f(16, 0, 57);
+    glVertex3f(18, 0, 57);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(18, -10, 56);
+    glVertex3f(16, -10, 56);
+    glVertex3f(16, 0, 56);
+    glVertex3f(18, 0, 56);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(18, -10, 56);
+    glVertex3f(18, -10, 57);
+    glVertex3f(18, 0, 57);
+    glVertex3f(18, 0, 56);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(12, 145, 123);
+    glVertex3f(16, -10, 57);
+    glVertex3f(16, -10, 56);
+    glVertex3f(16, 0, 56);
+    glVertex3f(16, 0, 57);
+    glEnd();
 
 
     glPushMatrix();
